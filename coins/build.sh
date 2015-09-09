@@ -1,7 +1,7 @@
 #!/bin/bash
 
 ROOT=$PWD
-COINS=(bitcoin litecoin dogecoin)
+COINS=(bitcoin litecoin dogecoin platinumcoin)
 OSNAME=`uname -s`
 
 if [ $OSNAME == Darwin ]; then
@@ -62,8 +62,9 @@ function build_litecoin() {
     build_orig_coin litecoin
 }
 
-function build_dogecoin() {
-    build_orig_coin dogecoin
+
+function build_platinumcoin() {
+    build_orig_coin platinumcoin
 }
 
 cd $ROOT/..
