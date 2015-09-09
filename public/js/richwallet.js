@@ -19,10 +19,10 @@ var networkConfigs = {
     "currency": "DOGE",
     "fee": 1.0
   },
-  "darkcoin": {
-    "leadingChar": "X", 
-    "version": 0x4C, "p2sh": 5, "keyVersion":204,
-    "currency": "DRK",
+  "platinumcoin": {
+    "leadingChar": "P", 
+    "version": 55, "p2sh": 5, "keyVersion":183,
+    "currency": "PTX",
     "fee": 0.01
   }
 };
@@ -32,7 +32,7 @@ $.ajax('api/config', {
   complete: function(resp) {
     richwallet.config = resp.responseJSON;
     richwallet.config.networkConfigs = networkConfigs;
-    richwallet.config.sortedNetworks = ['bitcoin', 'litecoin', 'dogecoin', 'darkcoin'];
+    richwallet.config.sortedNetworks = ['bitcoin', 'litecoin', 'dogecoin', 'platinumcoin'];
   }
 });
 
