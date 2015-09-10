@@ -64,7 +64,7 @@ function build_litecoin() {
 
 
 function build_platinumcoin() {
-    build_orig_coin platinumcoin
+    build_bitcoin platinumcoin
 }
 
 cd $ROOT/..
