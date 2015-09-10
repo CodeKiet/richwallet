@@ -1,7 +1,7 @@
 {
   "name": "richwallet",
-  "description": "DIY Multi Encryptcoin Wallet Service",
-  "version": "0.2.17",
+  "description": "Multi Encryptcoin Wallet Service",
+  "version": "0.2.18",
   "directories": {
     "lib": "./lib"
   },
